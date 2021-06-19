@@ -3,7 +3,8 @@ ports:
     onOpen: open-preview
 
 tasks:
-  - init: composer update
+  - init: composer self-update --2
+    command: composer update
     command: php -S 0.0.0.0:8000 -t public/
 
 vscode:
